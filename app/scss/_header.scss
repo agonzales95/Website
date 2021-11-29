@@ -1,0 +1,150 @@
+.header {
+  background-color: whitesmoke;
+
+  @include breakpoint-down(small) {
+    padding: 1rem 1rem 1rem 0rem;
+  }
+
+  @include breakpoint-up(medium) {
+    padding: 1rem 1rem 1rem 0rem;
+  }
+
+  @include breakpoint-up(large) {
+    padding: 0rem;
+  }
+
+  .logo {
+    padding: 1rem;
+    font-size: $font-sm;
+    color: rgb(39, 39, 39)
+  }
+
+  //navigation block
+
+  nav {
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+
+    a {
+      position: relative;
+      padding: 1rem;
+      font-size: $font-sm;
+      color: rgb(39, 39, 39);
+      border-radius: 2px;
+
+      &:hover {
+        color: grey;
+        transition: color 200ms ease-in-out;
+      }
+      
+      &:last-child {
+        margin-right: 0rem;
+      }
+    }
+
+    .btn-1 {
+      border: 1px solid;
+      border-color: lightgray;
+      border-radius: 5px;
+      background-color: rgb(228, 228, 228);
+      color: black;
+      padding: .5rem 1rem;
+      margin-right: 1rem;
+      font-size: $font-sm;
+      cursor: pointer;
+
+      &:hover {
+        background-color: rgb(223, 223, 223);
+        transition: background-color 300ms ease-in-out;
+      }
+
+      a {
+        padding: 0rem;
+      }
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+    ul {
+      margin: 0rem;
+      padding: 1rem;
+    }
+  }
+
+    //hamburger menu (mobile)
+
+    .hamburger {
+      padding-right: 0rem;
+      cursor: pointer;
+    }
+
+    .bar {
+      display: block;
+      width: 1.25rem;
+      height: .125rem;
+      margin: .25rem auto;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      background-color: rgb(0, 0, 0);
+    }
+
+    //dropdown menu
+
+    .dropbtn {
+      font-size: $font-sm;
+      margin: 0rem 0rem 0rem 0rem;
+      padding: 1rem 0rem 1rem 1rem;
+      cursor: pointer;
+
+      &:hover {
+        color: lightslategray;
+        transition: color 200ms ease-in-out;
+      }
+    }
+      
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      color: rgb(39, 39, 39);
+    }
+      
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 15rem;
+      border-radius: 5px;
+      top: calc(100%);
+    }
+
+    .dropdown-links {
+      position: relative;
+      padding: .75rem;
+    }
+      
+    .dropdown-content a {
+      font-size: $font-sm;
+      color: black;
+      padding: .25rem;
+      text-decoration: none;
+      display: block;
+    }
+      
+    .dropdown-content a:hover {
+      color: grey;
+      background-color: rgb(240, 240, 240);
+      border-radius: 5px;
+      transition: background-color 200ms ease-in-out
+    }
+      
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dwn-arrow {
+      cursor: pointer;
+    }
+}
