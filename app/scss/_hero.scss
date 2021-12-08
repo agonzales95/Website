@@ -37,7 +37,7 @@
                 font-size: $font-xmed;
                 text-align: left;
                 margin-left: 5rem;
-                max-width: 45%;
+                max-width: 75%;
             }
         }
 
@@ -53,9 +53,9 @@
                 margin-right: 4rem;
             }
 
-            @include breakpoint-down(medium) {
-                margin-left: 8rem;
-                margin-right: 8rem;
+            @include breakpoint-up(medium) {
+                margin-left: 20%;
+                margin-right: 20%;
             }
 
             @include breakpoint-up(large) {

@@ -51,6 +51,11 @@ html body .button:hover {
   transition: opacity 200ms ease-in-out;
 }
 
+html body .shadow-dropdown {
+  -webkit-box-shadow: 0px 0px 5px lightgray;
+          box-shadow: 0px 0px 5px lightgray;
+}
+
 html body .container {
   padding: 3rem 4rem 3rem 4rem;
 }
@@ -290,7 +295,7 @@ html body .flex-ai-c {
     font-size: 2rem;
     text-align: left;
     margin-left: 5rem;
-    max-width: 45%;
+    max-width: 75%;
   }
 }
 
@@ -308,10 +313,10 @@ html body .flex-ai-c {
   }
 }
 
-@media (max-width: 63.9375em) {
+@media (min-width: 40em) {
   .hero .hero-text p {
-    margin-left: 8rem;
-    margin-right: 8rem;
+    margin-left: 20%;
+    margin-right: 20%;
   }
 }
 
@@ -439,13 +444,13 @@ footer .logo {
 
 footer .copyright-content p {
   font-size: 0.75rem;
-  color: lightgray;
+  color: grey;
 }
 
 footer .copyright-icon {
   padding-left: 1rem;
   font-size: 0.875rem;
-  color: lightgray;
+  color: grey;
 }
 
 footer .social-info {
